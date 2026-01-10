@@ -7,7 +7,7 @@ for RGB-Thermal Multi-Object Tracking**](https://ieeexplore.ieee.org/document/11
 
 ## 🗼 Pipeline of MCTrack
 
-![](demo/MOT.png)
+![](demo/pipeline.png)
 
 ## 💁 Get Started
 
