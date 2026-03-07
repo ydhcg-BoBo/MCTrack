@@ -830,10 +830,7 @@ class DLASeg(BaseModel):
 
         x = []
         for i, vi_tensor, ir_tensor in zip(range(6), x1, x2):
-            if i==0 or i==1 or i==2 or i==3:
-                fuse_tensor = vi_tensor + ir_tensor
-            else:
-                fuse_tensor = getattr(self, 'Fuse{}'.format(i))(vi_tensor, ir_tensor)
+            fuse_tensor = getattr(self, 'Fuse{}'.format(i))(vi_tensor, ir_tensor)
             x.append(fuse_tensor)
         x = self.dla_up(x)
 
